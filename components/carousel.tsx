@@ -12,6 +12,9 @@ export default function Carrusel() {
     "/images/modelo_viendose_en_el_espejo_joyeria_vagatha.jpg",
   ];
 
+  // Duplicarlas para llenar pantallas grandes
+  const extendedImages = [...images, ...images];
+
   return (
     <section className="w-full bg-beige">
       <Swiper

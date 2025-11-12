@@ -1,18 +1,32 @@
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+
 export default function Isla() {
   return (
     <section className="bg-beige py-20 px-6 md:px-16">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* Imagen */}
         <div className="flex-1 flex justify-center">
-          <img
+          <motion.img
             src="/images/isla_vagatha.png"
             alt="Isla Vágatha en Plaza Altabrisa"
             className="w-full max-w-[550px] object-cover"
+            initial={{ opacity: 0, x: -80 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            viewport={{ once: false, amount: 0.3 }}
           />
         </div>
 
         {/* Texto */}
-        <div className="flex-1 text-center md:text-left space-y-5 self-center w-[90%] max-w-[430px]">
+        <motion.div 
+          className="flex-1 text-center md:text-left space-y-5 self-center w-[90%] max-w-[430px]"
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.9, delay: 0.2, ease: "easeOut" }}
+          viewport={{ once: false, amount: 0.3 }}
+          >
           <h2 className="font-serif italic text-4xl text-chocolate">
             NUESTRA <span className="not-italic">ISLA</span>
           </h2>
@@ -26,11 +40,13 @@ export default function Isla() {
           </p>
 
           {/* Botón glassmorphism */}
-          <a
+          <motion.a
             href="https://maps.app.goo.gl/dXgAVHPdBtBMH9t76"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white/50 backdrop-blur-md border border-white/40 rounded-full px-6 py-3 text-chocolate font-serif text-base hover:bg-white/70 transition shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.97 }}
             >
             <img
               src="/images/location_icon.png"
@@ -38,8 +54,8 @@ export default function Isla() {
               className="w-4 h-4 object-contain"
             />
             <span>Isla Vágatha, Plaza Altabrisa</span>
-          </a>
-        </div>
+          </motion.a>
+        </motion.div>
       </div>
     </section>
   );
