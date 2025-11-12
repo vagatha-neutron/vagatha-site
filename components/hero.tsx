@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <section
-      className="relative w-full min-h-[400px] md:min-h-[600px] lg:min-h-[722px] bg-cover bg-center flex flex-col justify-start items-center text-center pt-1 overflow-hidden"
+      className="relative w-full min-h-[600px] lg:min-h-[722px] bg-cover bg-center flex flex-col justify-start items-center text-center pt-1 overflow-hidden"
       style={{ backgroundImage: "url('/images/home_vagatha1.png')" }}
     >
       
