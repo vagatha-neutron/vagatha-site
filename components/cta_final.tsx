@@ -63,7 +63,7 @@ export default function CtaFinal() {
       <img
         src="/images/anillo_vagatha2.png"
         alt="Anillo decorativo derecho"
-        className="absolute bottom-[-2rem] right-[-1rem] md:right-[2rem] lg:right-[6rem] w-36 md:w-46 lg:w-56 object-cover"
+        className="absolute bottom-[-2rem] right-[-5rem] md:right-[2rem] lg:right-[6rem] w-36 md:w-46 lg:w-56 object-cover"
       />
     </section>
   );

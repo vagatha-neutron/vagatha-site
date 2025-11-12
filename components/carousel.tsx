@@ -18,7 +18,7 @@ export default function Carrusel() {
   return (
     <section className="w-full bg-beige">
       <Swiper
-        modules={[Autoplay, FreeMode]}
+        modules={[Autoplay]}
         loop={true}
         freeMode={{
             enabled:true,
@@ -31,6 +31,7 @@ export default function Carrusel() {
         autoplay={{
             delay: 0,
             disableOnInteraction: false,
+            pauseOnMouseEnter: false
         }}
         className="flex w-full h-[485px]"
         >

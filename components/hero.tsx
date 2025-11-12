@@ -36,11 +36,8 @@ export default function Hero() {
       </div>
 
       {/* Degradado inferior */}
-      <motion.div 
-        className="absolute z-10 bottom-0 left-0 w-full h-1/4 bg-gradient-to-b from-transparent via-beige/50 to-beige" 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
+      <div 
+        className="absolute z-10 bottom-0 left-0 w-full h-1/4 bg-gradient-to-b from-transparent via-beige/50 to-beige"
         />
     </section>
   );
