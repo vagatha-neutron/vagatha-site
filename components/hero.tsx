@@ -18,7 +18,7 @@ export default function Hero() {
           style={{ willChange: "transform, opacity" }}
           initial={{ opacity: 0, y: 40, scale: 0.95 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.3 }}
         />
 
@@ -27,7 +27,7 @@ export default function Hero() {
           style={{ willChange: "transform, opacity" }}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.6, duration: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
           viewport={{ once: false, amount: 0.3 }}
           >
           <span className="font-serif italic">Joyería y accesorios con intención </span>
