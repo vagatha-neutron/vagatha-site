@@ -4,16 +4,13 @@ import { motion } from "framer-motion";
 
 export default function CtaFinal() {
   return (
-    <motion.section 
+    <section 
     className="relative bg-beige pt-24 pb-6 px-6 text-center overflow-hidden"
-    style={{ willChange: "transform, opacity" }}
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1, ease: "easeOut" }}
-    viewport={{ once: false, amount: 0.3 }}
     >
       {/* Título principal */}
-      <h2 className="font-serif italic max-w-[950px] text-[2.2rem] mx-auto md:text-7xl text-chocolate mb-4 leading-tight">
+      <h2 
+      className="font-serif italic max-w-[950px] text-[2.2rem] mx-auto md:text-7xl text-chocolate mb-4 leading-tight"
+      >
         COLECCIONES CON ESTILO, <span className="not-italic">INTENCIÓN Y DETALLES QUE DURAN</span>
       </h2>
 
@@ -68,6 +65,6 @@ export default function CtaFinal() {
         alt="Anillo decorativo derecho"
         className="absolute bottom-[-2rem] right-[-1rem] md:right-[2rem] lg:right-[6rem] w-36 md:w-46 lg:w-56 object-cover"
       />
-    </motion.section>
+    </section>
   );
 }
