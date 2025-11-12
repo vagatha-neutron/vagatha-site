@@ -5,7 +5,7 @@ export default function Navbar() {
           {/* Instagram */}
           <li>
             <a 
-              href="https://instagram.com/vagatha" // 🔗 tu enlace
+              href="https://www.instagram.com/vagathamx/?igsh=MWZmMDZqMjFkczJ1aQ%3D%3D#" // 🔗 tu enlace
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center bg-white/50 backdrop-blur-md rounded-full p-2 hover:bg-white/70 transition shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
@@ -20,7 +20,7 @@ export default function Navbar() {
           {/* Facebook */}
           <li>
             <a 
-              href="https://instagram.com/vagatha" // 🔗 tu enlace
+              href="https://www.facebook.com/vagathajoyeria" // 🔗 tu enlace
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center bg-white/50 backdrop-blur-md rounded-full p-2 hover:bg-white/70 transition shadow-[0_4px_30px_rgba(0,0,0,0.1)]">
@@ -35,7 +35,7 @@ export default function Navbar() {
           {/* Contacto con WhatsApp */}
           <li>
             <a 
-              href="https://wa.me/529933095786" // 🔗 tu enlace de WhatsApp
+              href="https://wa.link/kpqoe5" // 🔗 tu enlace de WhatsApp
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white/50 backdrop-blur-md rounded-full px-4 py-2 text-chocolate hover:bg-white/70 transition shadow-[0_4px_30px_rgba(0,0,0,0.1)]">

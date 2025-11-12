@@ -27,7 +27,7 @@ export default function Isla() {
 
           {/* Botón glassmorphism */}
           <a
-            href="https://maps.google.com/?q=Vagatha+Plaza+Altabrisa"
+            href="https://maps.app.goo.gl/dXgAVHPdBtBMH9t76"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white/50 backdrop-blur-md border border-white/40 rounded-full px-6 py-3 text-chocolate font-serif text-base hover:bg-white/70 transition shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
