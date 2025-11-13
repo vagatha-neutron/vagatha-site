@@ -18,6 +18,7 @@ export default function Document() {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="alternate icon" type="image/png" href="/favicon.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="canonical" href="https://vagatha.norobot.com.mx/" />
 
         {/* OPEN GRAPH (para redes sociales) */}
         <meta property="og:title" content="Vágatha | Joyería con intención" />
@@ -27,10 +28,10 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://vagatha.vercel.app/images/preview_vagatha.jpg"
+          content="https://vagatha.norobot.com.mx/images/preview_vagatha.jpg"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vagatha.vercel.app" />
+        <meta property="og:url" content="https://vagatha.norobot.com.mx/" />
         <meta property="og:locale" content="es_MX" />
         <meta property="og:site_name" content="Vágatha" />
 
@@ -43,7 +44,7 @@ export default function Document() {
         />
         <meta
           name="twitter:image"
-          content="https://vagatha.vercel.app/images/preview_vagatha.jpg"
+          content="https://vagatha.norobot.com.mx/images/preview_vagatha.jpg"
         />
 
         {/* DATOS ESTRUCTURADOS JSON-LD */}
@@ -54,8 +55,8 @@ export default function Document() {
               "@context": "https://schema.org",
               "@type": "JewelryStore",
               name: "Vágatha",
-              image: "https://vagatha.vercel.app/images/preview_vagatha.jpg",
-              url: "https://vagatha.vercel.app",
+              image: "https://vagatha.norobot.com.mx/images/preview_vagatha.jpg",
+              url: "https://vagatha.norobot.com.mx/",
               description:
                 "Joyería y accesorios con intención. Encuentra piezas únicas que acompañan tus momentos más importantes.",
               address: {
