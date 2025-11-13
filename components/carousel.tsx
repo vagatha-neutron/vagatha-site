@@ -29,9 +29,11 @@ export default function Carrusel() {
         allowTouchMove={false}
         touchRatio={0}
         simulateTouch={false}
+        touchStartPreventDefault={false}
         autoplay={{
           delay: 0,
           disableOnInteraction: false,
+          stopOnLastSlide: false,
           pauseOnMouseEnter: false,
         }}
         className="flex w-full h-[485px]"
