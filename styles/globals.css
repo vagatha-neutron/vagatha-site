@@ -30,3 +30,26 @@ body, p, h1, h2, h3, h4, h5, h6, span {
 .font-cursive {
   font-family: var(--font-cursive) !important;
 }
+
+.slider-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 35s linear infinite;
+}
+
+.slide {
+  position: relative;
+  min-width: 350px;
+  height: 485px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
