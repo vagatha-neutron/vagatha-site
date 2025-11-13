@@ -25,7 +25,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <About />
-        <Isla/>
+        <Isla />
         <Carrusel/>
         <CtaFinal />
       </div>

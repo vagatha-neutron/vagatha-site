@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
 
 export default function About() {
   return (
@@ -36,9 +39,11 @@ export default function About() {
         {/* Imágenes */}
         <div className="max-w-[800px] mx-auto px-4 mt-10">
             <div className="grid grid-cols-2 gap-2 sm:gap-6 items-start">
-                <motion.img
+                <MotionImage
                 src="/images/joyas_vagatha1.jpg"
                 alt="Exhibidor Vágatha"
+                width={500}
+                height={650}
                 className="w-full h-auto object-cover -translate-y-4 sm:-translate-y-4"
                 style={{ willChange: "transform, opacity" }}
                 initial={{ opacity: 0, y: 60 }}
@@ -46,9 +51,11 @@ export default function About() {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: false, amount: 0.2 }}
                 />
-                <motion.img
+                <MotionImage
                 src="/images/joyas_vagatha2.jpg"
                 alt="Joyas Vágatha"
+                width={500}
+                height={650}
                 className="w-full h-auto object-cover translate-y-10 sm:translate-y-10"
                 style={{ willChange: "transform, opacity" }}
                 initial={{ opacity: 0, y: 60 }}

@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
 
 export default function Isla() {
   return (
@@ -8,10 +11,12 @@ export default function Isla() {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-12">
         {/* Imagen */}
         <div className="flex-1 flex justify-center">
-          <motion.img
+          <MotionImage
             src="/images/isla_vagatha.png"
             alt="Isla Vágatha en Plaza Altabrisa"
-            className="w-full max-w-[550px] object-cover"
+            width={550}
+            height={650}
+            className="w-full h-auto max-w-[550px] object-cover"
             initial={{ opacity: 0, x: -80 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
@@ -48,9 +53,11 @@ export default function Isla() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.97 }}
             >
-            <img
+            <Image
               src="/images/location_icon.png"
               alt="Ubicación"
+              width={16}
+              height={16}
               className="w-4 h-4 object-contain"
             />
             <span>Isla Vágatha, Plaza Altabrisa</span>

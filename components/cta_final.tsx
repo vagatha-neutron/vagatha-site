@@ -1,6 +1,9 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
+
+const MotionImage = motion(Image);
 
 export default function CtaFinal() {
   return (
@@ -36,9 +39,11 @@ export default function CtaFinal() {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.97 }}
       >
-        <img
+        <Image
           src="/images/location_icon.png"
           alt="Ubicación"
+          width={16}
+          height={16}
           className="w-4 h-4 object-contain"
         />
         <span>Isla Vágatha, Plaza Altabrisa</span>
@@ -50,9 +55,11 @@ export default function CtaFinal() {
       </p>
 
       {/* Decorativos de anillos */}
-      <motion.img
+      <MotionImage
         src="/images/anillo_vagatha1.png"
         alt="Anillo decorativo izquierdo"
+        width={180}
+        height={180}
         className="absolute top-12 left-4 md:left-17 lg:left-30 w-24 md:w-36 lg:48 rotate-[-15deg]"
         style={{ willChange: "transform, opacity" }}
         initial={{ opacity: 0, y: -40 }}
@@ -60,9 +67,11 @@ export default function CtaFinal() {
         transition={{ duration: 1.2, ease: "easeOut" }}
         viewport={{ once: false, amount: 0.2 }}
       />
-      <img
+      <Image
         src="/images/anillo_vagatha2.png"
         alt="Anillo decorativo derecho"
+        width={260}
+        height={260}
         className="absolute bottom-[-2rem] right-[-5rem] md:right-[2rem] lg:right-[6rem] w-36 md:w-46 lg:w-56 object-cover"
       />
     </section>

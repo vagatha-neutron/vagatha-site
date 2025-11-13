@@ -1,7 +1,7 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode } from "swiper/modules";
-/* ... resto del código del carrusel ... */
+import Image from "next/image";
 
 export default function Carrusel() {
   const images = [
@@ -12,40 +12,46 @@ export default function Carrusel() {
     "/images/modelo_viendose_en_el_espejo_joyeria_vagatha.jpg",
   ];
 
-  // Duplicarlas para llenar pantallas grandes
-  const extendedImages = [...images, ...images];
+  const extended = [...images, ...images];
 
   return (
     <section className="w-full bg-beige">
       <Swiper
-        modules={[Autoplay]}
+        modules={[Autoplay, FreeMode]}
         loop={true}
         freeMode={{
-            enabled:true,
-            momentum: false,
+          enabled: true,
+          momentum: false,
         }}
-        slidesPerView={"auto"}
+        slidesPerView="auto"
         spaceBetween={10}
-        speed={6000} // velocidad de desplazamiento
-        allowTouchMove={false} // evita pausas al tocar
+        speed={6000}
+        allowTouchMove={false}
+        touchRatio={0}
+        simulateTouch={false}
         autoplay={{
-            delay: 0,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: false
+          delay: 0,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: false,
         }}
         className="flex w-full h-[485px]"
-        >
-
-        {images.map((src, i) => (
+      >
+        {extended.map((src, i) => (
           <SwiperSlide
             key={i}
             className="!w-auto flex-shrink-0 h-[485px] overflow-hidden"
           >
-            <img
-              src={src}
-              alt={`Vágatha carrusel ${i + 1}`}
-              className="h-full w-auto object-cover"
-            />
+            <div className="relative h-[485px] w-[350px]">
+              <Image
+                src={src}
+                alt={`Vágatha carrusel ${i + 1}`}
+                fill
+                priority={false}
+                loading="lazy"
+                sizes="350px"
+                className="object-cover"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
