@@ -5,7 +5,7 @@ const images = [
   "/images/manos_usando_joyeria_vagatha.jpg",
   "/images/manos_modelando_anillos_vagatha.jpg",
   "/images/mostrando_cadena_y_joyeria_vagatha.jpg",
-  "/images/guardando_en_el_bolsillo_joyeria_vagatha.jpg",
+  "/images/cinturon_vagatha1.jpg",
   "/images/modelo_viendose_en_el_espejo_joyeria_vagatha.jpg",
 ];
 
