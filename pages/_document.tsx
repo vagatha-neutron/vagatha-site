@@ -18,7 +18,7 @@ export default function Document() {
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <link rel="alternate icon" type="image/png" href="/favicon.png" />
         <link rel="shortcut icon" href="/favicon.ico" />
-        <link rel="canonical" href="https://vagatha.norobot.com.mx/" />
+        <link rel="canonical" href="https://www.vagatha.com/" />
 
         {/* OPEN GRAPH (para redes sociales) */}
         <meta property="og:title" content="Vágatha | Joyería con intención" />
@@ -28,10 +28,10 @@ export default function Document() {
         />
         <meta
           property="og:image"
-          content="https://vagatha.norobot.com.mx/images/preview_vagatha.jpg"
+          content="https://www.vagatha.com/images/preview_vagatha.jpg"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://vagatha.norobot.com.mx/" />
+        <meta property="og:url" content="https://www.vagatha.com/" />
         <meta property="og:locale" content="es_MX" />
         <meta property="og:site_name" content="Vágatha" />
 
@@ -44,7 +44,7 @@ export default function Document() {
         />
         <meta
           name="twitter:image"
-          content="https://vagatha.norobot.com.mx/images/preview_vagatha.jpg"
+          content="https://www.vagatha.com/images/preview_vagatha.jpg"
         />
 
         {/* DATOS ESTRUCTURADOS JSON-LD */}
